@@ -24,7 +24,7 @@ if (file.exists("./UCI HAR Dataset") == FALSE) {  unzip(downloadZipFile)  }
 
 # Read files
 x_train    <- read.table("./UCI HAR Dataset/train/X_train.txt"      , header = FALSE)
-X_test     <- read.table("./UCI HAR Dataset/test/X_test.txt"        , header = FALSE)
+x_test     <- read.table("./UCI HAR Dataset/test/X_test.txt"        , header = FALSE)
 y_train    <- read.table("./UCI HAR Dataset/train/y_train.txt"      , header = FALSE)
 y_test     <- read.table("./UCI HAR Dataset/test/y_test.txt"        , header = FALSE)
 subj_train <- read.table("./UCI HAR Dataset/train/subject_train.txt", header = FALSE)
@@ -33,7 +33,7 @@ subj_test  <- read.table("./UCI HAR Dataset/test/subject_test.txt"  , header = F
 # Data table (train vs test) 
 # I chose rbind for union this tables.
 
-x <- rbind(x_train, X_test)
+x <- rbind(x_train, x_test)
 y <- rbind(y_train, y_test)
 s <- rbind(subj_train, subj_test)
 
