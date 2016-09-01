@@ -1,2 +1,0 @@
-# GettingAndCleanningData
-Data Course Project
