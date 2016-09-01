@@ -9,8 +9,8 @@ fileUrl <- 'https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%2
 # Local data file
 downloadZipFile <- "./getdata-projectfiles-UCI-HAR-Dataset.zip"
 # File of the tidy data:
-tidyDataFile       <- "./tidy-UCI-HAR-dataset.txt"
-tidyDataFileAVGtxt <- "./tidy-UCI-HAR-dataset-AVG.txt"
+tidyDataFile       <- "./tidyUciHar.txt"
+tidyDataFileAVGtxt <- "./tidyUciHarAvg.txt"
 
 ### Download and Unzip
 if (file.exists(downloadZipFile) == FALSE) { download.file(fileUrl, destfile = downloadZipFile) }
